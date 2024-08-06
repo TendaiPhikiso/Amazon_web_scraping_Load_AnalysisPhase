@@ -1,4 +1,4 @@
-# Amazon_web_scraping_Load_AnalysisPhase
+# Amazon web scraping Load & Analysis Phase
 
 
 ### 1. What is the avg sellingPrice of all books that are in stock?
