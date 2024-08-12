@@ -72,7 +72,7 @@ WHERE Availability = 'Out of stock'
 | 172      | 59           |
 
 
-### 3.
+### 3. What is the min & max Sellingprice of all books in stock
 
 **SQL Query:**
 
@@ -205,6 +205,18 @@ ORDER BY ReviewCount DESC;
 
 #### Result Set
 
+| AuthorName                 | ReviewCount |
+|----------------------------|-------------|
+| Emily Oste                 | 5828        |
+| Martin Kleppmann           | 4660        |
+| Cathy O'Neil               | 4652        |
+| Cole Nussbaumer Knaflic    | 4651        |
+| David Spiegelhalte         | 3615        |
+| Foster Provos              | 1234        |
+| Nick Sing                  | 986         |
+| Jan Wengrow                | 733         |
+| Malcolm Kendrick           | 696         |
+| Ken Puls                   | 687         |
 
 
 ### 8. What is the average page length for books in different formats e.g paperback and hardcover?
@@ -223,6 +235,11 @@ GROUP BY TypeofBook;
 ```
 
 #### Result Set
+
+| TypeofBook | Average Print Length |
+|------------|----------------------|
+| Hardcover  | 392                  |
+| Paperback  | 299                  |
 
 
 ### 9. Is there a relationship between print length and price?
@@ -272,9 +289,18 @@ SELECT
      (SQRT(SumSquaredDevPrint) * SQRT(SumSquaredDevPrice))), 3) AS CorrelationCoefficient
 FROM CTE_Product, CTE_SquaredDevs;
 
+ /* 
+ - As PrintLength increases, SellingPrice tends to increase as well.
+ A coefficient of 0.724 suggests a moderate to strong correlation. 
+ The closer the value is to 1, the stronger the positive relationship between the two variables.
+ */
 ```
 
 #### Result Set
+
+| CorrelationCoefficient |
+|------------------------|
+| 0.724                  |
 
 
 ### 10.  Calculate the Avg Discount percentage
@@ -299,3 +325,6 @@ FROM CTE_AvgDiscount
 ```
 
 #### Result Set
+| Average Discount |
+|------------------|
+| 21.8%            |
