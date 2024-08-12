@@ -1,5 +1,28 @@
-# Amazon web scraping Load & Analysis Phase
+<div align="center">
+	<h1>
+		Amazon web scraping Load & Analysis Phase
+	</h1>
+</div>
 
+
+### Loading Data to Microsoft SQL Server 
+```python
+# connection details
+server = 'ServerName'
+database = 'Amazon_DB'
+driver = 'ODBC Driver 17 for SQL Server'
+
+# Create a connection string
+connection_string = f'mssql+pyodbc://@{server}/{database}?driver={driver}&trusted_connection=yes'
+
+# Create an engine
+engine = create_engine(connection_string)
+
+# Save the DataFrame to the SQL Server table
+table_name = 'Data_Books'
+df.to_sql(table_name, engine, index=False)
+
+```
 
 ### 1. What is the avg sellingPrice of all books that are in stock?
 
