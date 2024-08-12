@@ -39,6 +39,10 @@ WHERE Availability LIKE '%In stock%'
 
 #### Result Set
 
+| Metric               | Value  |
+|----------------------|--------|
+| Average_sellingPrice | 27.12  |
+
 
 ### 2. Number of books that are in stock & out of stock
 
@@ -63,6 +67,9 @@ WHERE Availability = 'Out of stock'
 
 #### Result Set
 
+| In Stock | Out Of Stock |
+|----------|--------------|
+| 172      | 59           |
 
 
 ### 3.
@@ -99,6 +106,14 @@ WHERE book_rank = 1
 
 #### Result Set
 
+| BookTitle                                                                    | min_sellingPrice |
+|------------------------------------------------------------------------------|------------------|
+| Covid By Numbers: Making Sense of the Pandemic with Data (Pelican Books)     | 4                |
+
+
+| BookTitle                                                                               | max_sellingPrice |
+|-----------------------------------------------------------------------------------------|------------------|
+| CRC Handbook of Chemistry and Physics: A Ready-reference Book of Chemical and Physical Data | 185              |
 
 
 ### 4. What are the most common types of books (e.g., Paperback, Hardcover, Kindle)?
