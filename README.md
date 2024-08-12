@@ -131,6 +131,13 @@ ORDER BY BookCount DESC;
 
 #### Result Set
 
+| TypeofBook       | BookCount |
+|------------------|-----------|
+| Paperback        | 158       |
+| Kindle Edition   | 53        |
+| Hardcover        | 18        |
+| Unknown          | 5         |
+| Unknown Binding  | 1         |
 
 
 ### 5. Which book formats are most in stock?
@@ -149,6 +156,12 @@ ORDER BY  [In Stock Level] DESC;
 
 #### Result Set
 
+| TypeofBook       | In Stock Level |
+|------------------|----------------|
+| Paperback        | 152            |
+| Hardcover        | 14             |
+| Unknown          | 5              |
+| Unknown Binding  | 1              |
 
 
 ### 6. What books should people be expecting in the upcoming months of 2024?
@@ -169,6 +182,11 @@ WHERE Availability LIKE '%released%'
 
 #### Result Set
 
+| BookTitle                                                                                                           | AuthorName                 | Price  | TypeofBook | Availability                                      |
+|---------------------------------------------------------------------------------------------------------------------|----------------------------|--------|------------|---------------------------------------------------|
+| How to Win the Premier League: The Inside Story of Football’s Data Revolution                                       | Ian Graham                 | £16.99 | Hardcover   | This title will be released on August 15, 2024. Pre-order now. |
+| Daphne Draws Data: A Storytelling with Data Adventure                                                               | Cole Nussbaumer Knaflic    | £15.63 | Hardcover   | This title will be released on October 29, 2024. Pre-order now. |
+| Tinpot: Football's Forgotten Tournaments… from the Anglo Italian to Zenith Data Systems Cup                         | Simon Turne                | £11.99 | Paperback   | This title will be released on August 5, 2024. Pre-order now.   |
 
 
 ### 7. Top 10 Authors by reviews count
