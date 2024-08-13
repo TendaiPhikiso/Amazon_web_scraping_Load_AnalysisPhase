@@ -31,7 +31,7 @@ df.to_sql(table_name, engine, index=False)
 In the Load phase of this project, I focused on transferring the cleaned and transformed dataset of Amazon book information into Microsoft SQL Server. I began by establishing a connection to the SQL Server using a specified connection string and ODBC driver. Once connected, I used the pandas library’s to_sql method to load the DataFrame into the database. The data was stored in a table named Data_Books within the Amazon_DB database. This process ensured that the dataset was securely stored in a structured format, ready for any further analysis 
 
 ---
-## Data Analysis 
+## Data Analysis - SQL 
 
 In the Analysis phase of the project, I delved into the loaded Amazon book dataset to extract actionable insights and address several critical business questions, such as the average selling price of all books currently in stock, the relationship between print length and price, and more. The analysis aimed to provide a comprehensive understanding of various aspects of the dataset, using SQL queries and Common Table Expressions (CTEs) to facilitate complex calculations and aggregations.
 
