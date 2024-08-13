@@ -33,6 +33,8 @@ In the Load phase of this project, I focused on transferring the cleaned and tra
 ---
 ## Data Analysis 
 
+In the Analysis phase of the project, I delved into the loaded Amazon book dataset to extract actionable insights and address several critical business questions, such as the average selling price of all books currently in stock, the relationship between print length and price, and more. The analysis aimed to provide a comprehensive understanding of various aspects of the dataset, using SQL queries and Common Table Expressions (CTEs) to facilitate complex calculations and aggregations.
+
 ### 1. What is the avg sellingPrice of all books that are in stock?
 
 **SQL Query:**
