@@ -6,6 +6,9 @@
 
 
 ### Loading Data to Microsoft SQL Server 
+
+The Load phase of the ETL process involves transferring the processed and transformed data into a target storage system, such as a database or data warehouse. This phase ensures that the data is saved in a structured format where it can be easily accessed, managed, and analysed.
+
 ```python
 # connection details
 server = 'ServerName'
@@ -23,6 +26,12 @@ table_name = 'Data_Books'
 df.to_sql(table_name, engine, index=False)
 
 ```
+
+#### Load Phase Implementation
+In the Load phase of this project, I focused on transferring the cleaned and transformed dataset of Amazon book information into Microsoft SQL Server. I began by establishing a connection to the SQL Server using a specified connection string and ODBC driver. Once connected, I used the pandas library’s to_sql method to load the DataFrame into the database. The data was stored in a table named Data_Books within the Amazon_DB database. This process ensured that the dataset was securely stored in a structured format, ready for any further analysis 
+
+---
+## Data Analysis 
 
 ### 1. What is the avg sellingPrice of all books that are in stock?
 
