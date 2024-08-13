@@ -339,3 +339,7 @@ FROM CTE_AvgDiscount
 | Average Discount |
 |------------------|
 | 21.8%            |
+
+1. **Data Visualisation**: The next step involves visualising the data using Power BI. [Click here to view Viz](https://github.com/TendaiPhikiso/Amazon_web_Scraping_Visualisation)
+
+2. **View Transform Phase**: If you are interested in viewing the details of the Transform phase of the project, you can find it [here](https://github.com/TendaiPhikiso/Amazon_web_Scraping_Transform).
