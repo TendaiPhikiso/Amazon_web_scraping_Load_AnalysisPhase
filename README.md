@@ -30,6 +30,10 @@ df.to_sql(table_name, engine, index=False)
 #### Load Phase Implementation
 In the Load phase of this project, I focused on transferring the cleaned and transformed dataset of Amazon book information into Microsoft SQL Server. I began by establishing a connection to the SQL Server using a specified connection string and ODBC driver. Once connected, I used the pandas library’s to_sql method to load the DataFrame into the database. The data was stored in a table named Data_Books within the Amazon_DB database. This process ensured that the dataset was securely stored in a structured format, ready for any further analysis 
 
+- **`server`**: The name of the SQL Server instance I wanted to connect to.
+- **`database`**: The name of the database where I intended to store the scraped data.
+- **`driver`**: The ODBC driver used to facilitate the connection, specifically `'ODBC Driver 17 for SQL Server'`.
+- **`trusted_connection=yes`**: This enabled Windows Authentication, allowing me to connect securely without providing explicit username and password credentials.
 ---
 ## Data Analysis - SQL 
 
